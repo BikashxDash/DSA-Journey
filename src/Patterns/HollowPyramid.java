@@ -8,17 +8,20 @@ public class HollowPyramid {
 
         for (int row = 1; row <= n; row ++) {
 //            for each row -> variable cols
-//            spaces
+//            spaces (part 1)
             for (int col = 1; col <= (n-row); col++) {
                 System.out.print("  ");
             }
 
+//            part - 2
 //            stars phase 1
             if (row == 1 || row == n) {
                 for (int col = 1; col <= (2*row-1); col++) {
                     System.out.print("* ");
                 }
             }
+
+//            star with hollow phase 2
             else {
 //                1*
                 System.out.print("* ");
