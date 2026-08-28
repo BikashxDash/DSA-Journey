@@ -1,12 +1,11 @@
-package Patterns;
+package Patterns.Numbers.Stars;
 
-public class HollowDiamond {
+public class HollowPyramid {
 
     static void main() {
 
-        int n = 4;
+        int n = 5;
 
-//        part 1
         for (int row = 1; row <= n; row ++) {
 //            for each row -> variable cols
 //            spaces (part 1)
@@ -16,7 +15,7 @@ public class HollowDiamond {
 
 //            part - 2
 //            stars phase 1
-            if (row == 1) {
+            if (row == 1 || row == n) {
                 for (int col = 1; col <= (2*row-1); col++) {
                     System.out.print("* ");
                 }
@@ -37,34 +36,6 @@ public class HollowDiamond {
             }
 
 //            move to next row
-            System.out.println();
-        }
-
-//        part 2
-        for (int row = 1; row <= n; row++) {
-
-            if(row == 1) {
-                continue;
-            }
-
-//            spaces
-            for (int col = 1; col <= row-1; col++) {
-                System.out.print("  ");
-            }
-
-            System.out.print("* ");
-
-//            hollow
-            for (int col = 1; col <= (2*n-2*row-1); col++) {
-                System.out.print("  ");
-            }
-
-            if(row == 4) {
-                continue;
-            }
-
-            System.out.print("* ");
-
             System.out.println();
         }
 

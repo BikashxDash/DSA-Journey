@@ -1,15 +1,14 @@
-package Patterns;
+package Patterns.Numbers.Stars;
 
-public class RightAngleTringle {
+public class SolidSquare {
 
     static void main() {
 
-        int n = 5;
+        int n = 4;
 
         for (int row = 1; row <= n; row++) {
-//            for each row -> variable clos
-//            formula -> col -> 1 - value of row
-            for (int col = 1; col <= row; col++) {
+//            for each row -> n cols
+            for (int col = 1; col <= n; col++) {
 //                print star
                 System.out.print("* ");
             }

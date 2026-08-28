@@ -1,4 +1,4 @@
-package Patterns;
+package Patterns.Numbers.Stars;
 
 public class SolidRhombus {
 

@@ -1,14 +1,15 @@
-package Patterns;
+package Patterns.Numbers.Stars;
 
-public class InvertedRightangleTringle {
+public class RightAngleTringle {
 
     static void main() {
 
         int n = 5;
 
         for (int row = 1; row <= n; row++) {
-//            formula -> col -> n-1
-            for (int col = 1; col <= n-row+1; col++) {
+//            for each row -> variable clos
+//            formula -> col -> 1 - value of row
+            for (int col = 1; col <= row; col++) {
 //                print star
                 System.out.print("* ");
             }

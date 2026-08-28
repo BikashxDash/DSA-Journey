@@ -1,14 +1,14 @@
-package Patterns;
+package Patterns.Numbers.Stars;
 
-public class SolidSquare {
+public class InvertedRightangleTringle {
 
     static void main() {
 
-        int n = 4;
+        int n = 5;
 
         for (int row = 1; row <= n; row++) {
-//            for each row -> n cols
-            for (int col = 1; col <= n; col++) {
+//            formula -> col -> n-1
+            for (int col = 1; col <= n-row+1; col++) {
 //                print star
                 System.out.print("* ");
             }
