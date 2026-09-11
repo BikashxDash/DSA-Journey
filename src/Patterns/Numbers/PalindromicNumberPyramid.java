@@ -25,11 +25,7 @@ public class PalindromicNumberPyramid {
                 decRowValue--;
             }
 
-
             System.out.println();
-
         }
-
     }
-
 }
