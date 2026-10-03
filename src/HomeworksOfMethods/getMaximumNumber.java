@@ -1,6 +1,6 @@
 package HomeworksOfMethods;
 
-public class Maximum {
+public class getMaximumNumber {
 
     static int getMaximum(int a,int b) {
         if (a > b) {
